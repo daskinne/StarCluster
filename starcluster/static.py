@@ -43,8 +43,8 @@ try:
 except:
     pass
 SSH_TEMPLATE = 'ssh %(opts)s %(user)s@%(host)s'
-
-STARCLUSTER_CFG_DIR = os.path.join(os.path.expanduser('~'), '.starcluster')
+STARCLUSTER_CFG_DIR = os.path.join('/home/ubuntu/', '.starcluster')
+#STARCLUSTER_CFG_DIR = os.path.join(os.path.expanduser('~'), '.starcluster')
 STARCLUSTER_CFG_FILE = os.path.join(STARCLUSTER_CFG_DIR, 'config')
 STARCLUSTER_PLUGIN_DIR = os.path.join(STARCLUSTER_CFG_DIR, 'plugins')
 STARCLUSTER_LOG_DIR = os.path.join(STARCLUSTER_CFG_DIR, 'logs')
